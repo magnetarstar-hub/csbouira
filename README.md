@@ -59,7 +59,7 @@ We appreciate the efforts of everyone who has contributed to the source code of 
 
 <table>
 <tr>
-<td style="text-align: center; width: 100px;"><a href="https://github.com/zedsalim/csbouira/graphs/contributors" target="_blank"><img src="https://avatars.githubusercontent.com/u/121177411?v=4" alt="zedsalim" style="width: 80px; height: 80px;"/></a><br/><span>212 commits</span></td>
+<td style="text-align: center; width: 100px;"><a href="https://github.com/zedsalim/csbouira/graphs/contributors" target="_blank"><img src="https://avatars.githubusercontent.com/u/121177411?v=4" alt="zedsalim" style="width: 80px; height: 80px;"/></a><br/><span>219 commits</span></td>
 <td style="text-align: center; width: 100px;"><a href="https://github.com/zedsalim/csbouira/graphs/contributors" target="_blank"><img src="https://avatars.githubusercontent.com/u/127874935?v=4" alt="magnetarstar-hub" style="width: 80px; height: 80px;"/></a><br/><span>10 commits</span></td>
 <td style="text-align: center; width: 100px;"><a href="https://github.com/zedsalim/csbouira/graphs/contributors" target="_blank"><img src="https://avatars.githubusercontent.com/u/123634915?v=4" alt="daaaaaaanyyyyy" style="width: 80px; height: 80px;"/></a><br/><span>1 commits</span></td>
 </tr>
@@ -78,21 +78,30 @@ A special thanks to those who have contributed by uploading valuable files and r
 <!-- START FILE_UPLOADS -->
 
 <ul>
+<li><strong>Samy Bacha</strong>: total files uploaded (Unlimited).</li>
 <li><strong>Faid Djameleddine</strong>: total files uploaded (Unlimited).</li>
+<li><strong>Tamdjiat Med Gaya</strong>: total files uploaded (Unlimited).</li>
+<li><strong>Rayane Bouafia</strong>: total files uploaded (Unlimited).</li>
+<li><strong>Amara Sami Anis</strong>: total files uploaded (Unlimited).</li>
+<li><strong>Manel Ghazi</strong>: total files uploaded (Unlimited).</li>
+<li><strong>Marwa Adjou</strong>: total files uploaded (Unlimited).</li>
+<li><strong>Aldjia Arar</strong>: total files uploaded (Unlimited).</li>
+<li><strong>Nacerbey Amel</strong>: total files uploaded (Unlimited).</li>
+<li><strong>Alouache Lyna</strong>: total files uploaded (Unlimited).</li>
+<li><strong>Melouk Djouiria</strong>: total files uploaded (Unlimited).</li>
 <li><strong>Anonymous</strong>: total files uploaded (1).</li>
 <li><strong>Khellal Yacine</strong>: total files uploaded (3).</li>
-<li><strong>Bacha Samy</strong>: total files uploaded (23).</li>
+<li><strong>Bacha Samy</strong>: total files uploaded (51).</li>
 <li><strong>Aya</strong>: total files uploaded (20).</li>
 <li><strong>Larbi Mohand</strong>: total files uploaded (1).</li>
 <li><strong>Kemache Mahdi</strong>: total files uploaded (87).</li>
 <li><strong>Feradji Houria</strong>: total files uploaded (5).</li>
-<li><strong>Aissani Assia</strong>: total files uploaded (1).</li>
+<li><strong>Aissani Assia</strong>: total files uploaded (3).</li>
 <li><strong>Dribine Feriel</strong>: total files uploaded (1).</li>
 <li><strong>Abderraouf Belkacemi</strong>: total files uploaded (1).</li>
 <li><strong>Fatima</strong>: total files uploaded (7).</li>
 <li><strong>Bouadjina Haroun</strong>: total files uploaded (4).</li>
 <li><strong>Boukharouba Hanane</strong>: total files uploaded (1).</li>
-<li><strong>Amara Sami Anis</strong>: total files uploaded (Unlimited).</li>
 <li><strong>Ibtihal</strong>: total files uploaded (1).</li>
 <li><strong>Kenza</strong>: total files uploaded (11).</li>
 <li><strong>Salah</strong>: total files uploaded (1).</li>
@@ -103,13 +112,18 @@ A special thanks to those who have contributed by uploading valuable files and r
 <li><strong>Madris Omega</strong>: total files uploaded (5).</li>
 <li><strong>Sara</strong>: total files uploaded (1).</li>
 <li><strong>Amira</strong>: total files uploaded (5).</li>
-<li><strong>Ritadje</strong>: total files uploaded (61).</li>
+<li><strong>Ritadje</strong>: total files uploaded (76).</li>
 <li><strong>Amara Anis Sami</strong>: total files uploaded (3).</li>
 <li><strong>Dina</strong>: total files uploaded (7).</li>
 <li><strong>Djalil</strong>: total files uploaded (1).</li>
 <li><strong>Dallal Oulefki</strong>: total files uploaded (1).</li>
 <li><strong>Moon</strong>: total files uploaded (13).</li>
 <li><strong>Nihad</strong>: total files uploaded (6).</li>
+<li><strong>Yasmine</strong>: total files uploaded (2).</li>
+<li><strong>Akkache Amira</strong>: total files uploaded (1).</li>
+<li><strong>Siham</strong>: total files uploaded (2).</li>
+<li><strong>Katia</strong>: total files uploaded (2).</li>
+<li><strong>Tibi</strong>: total files uploaded (1).</li>
 </ul>
 
 <!-- END FILE_UPLOADS -->

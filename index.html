@@ -1,17 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CS Bouira</title>
-    <script
-      type="module"
-      src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js"
-    ></script>
-    <script
-      type="module"
-      src="https://www.gstatic.com/firebasejs/10.13.0/firebase-storage.js"
-    ></script>
     <link href="assets/css/style.min.css" rel="stylesheet" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link
@@ -28,7 +20,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -152,11 +147,6 @@
             </li>
             <li class="nav-item me-3">
               <a href="#contribute-scroll" class="nav-link">Contribute</a>
-            </li>
-            <li class="nav-item me-3">
-              <a href="./assets/html/our-journey.html" class="nav-link"
-                >Story</a
-              >
             </li>
           </ul>
           <!-- Search button nav  -->
@@ -604,8 +594,7 @@
               >.
             </p>
             <p class="fs-4">
-              ونود إعلامكم بأن السنوات M1, M2 لا تزال قيد التطوير. يمكنكم الحصول
-              على الدروس والسلاسل والامتحانات المتاحة حاليًا على مواقع
+              ويمكنكم أيضا الحصول على الدروس والسلاسل والامتحانات على مواقع
               <a
                 href="https://tahadz.com/khbich/"
                 target="_blank"
@@ -644,6 +633,12 @@
           ></span>
           Contact Us
         </h2>
+        <div class="text-center mb-4" data-aos="fade-up" data-aos-delay="200">
+          <p class="h5">
+            <i class="fa-solid fa-envelope text-primary me-2"></i>
+            <a href="mailto:csbouira@proton.me">csbouira@proton.me</a>
+          </p>
+        </div>
         <div class="row pb-5">
           <div data-aos="fade-down" data-aos-delay="250" class="col-12">
             <form action="" method="POST" name="csb-contact-form">
@@ -740,10 +735,14 @@
     <footer class="p-5 bg-dark text-white text-center position-relative">
       <div class="container">
         <p class="lead">
-          Copyright &copy; 2024:
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          :
           <a
             class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-            href="https://salimzaidi.site"
+            href="https://salimzaidi.netlify.app"
             target="_blank"
             >Salim Zaidi</a
           >
@@ -883,7 +882,7 @@
     <script src="assets/js/in-progress.min.js"></script>
     <!-- <script src="assets/js/announcement.min.js"></script> -->
     <script src="assets/js/newDomain.min.js"></script>
-    <script type="module" src="assets/js/firebase_upload.min.js"></script>
+    <script type="module" src="assets/js/files_upload.min.js"></script>
     <!-- hide info alert -->
     <script>
       function handleClick(event) {
