@@ -1578,6 +1578,11 @@ dialog#fileModal.fullscreen .modal-box {
   height: 0.5rem;
 }
 
+#fileDropZone.is-dragging {
+  background-color: color-mix(in oklab, var(--color-primary) 12%, transparent);
+  border-style: dashed;
+}
+
 .thanks-popup {
   background-color: var(--color-base-100);
   border: 1px solid var(--hairline);

@@ -29,6 +29,7 @@ export function initUpload() {
 
   const form = document.getElementById('uploadForm');
   const filesInput = document.getElementById('files');
+  const fileDropZone = document.getElementById('fileDropZone');
   if (!form || !filesInput) return;
 
   filesInput.addEventListener('change', (e) => {
@@ -46,6 +47,27 @@ export function initUpload() {
     selectedFiles.forEach((f) => dt.items.add(f));
     filesInput.files = dt.files;
     renderFilesList();
+  });
+
+  fileDropZone?.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    fileDropZone.classList.add('is-dragging');
+  });
+
+  fileDropZone?.addEventListener('dragleave', (e) => {
+    if (!fileDropZone.contains(e.relatedTarget)) {
+      fileDropZone.classList.remove('is-dragging');
+    }
+  });
+
+  fileDropZone?.addEventListener('drop', (e) => {
+    e.preventDefault();
+    fileDropZone.classList.remove('is-dragging');
+
+    if (e.dataTransfer.files.length > 0) {
+      filesInput.files = e.dataTransfer.files;
+      filesInput.dispatchEvent(new Event('change', { bubbles: true }));
+    }
   });
 
   // Expose removeFile globally (called from rendered list)
