@@ -198,6 +198,12 @@
             >Calculator</a
           >
           <a
+            href="#"
+            onclick="openCurriculum(); return false;"
+            class="btn btn-ghost nav-link"
+            >Study plan</a
+          >
+          <a
             href="#about"
             class="btn btn-ghost nav-link"
             >About</a
@@ -368,6 +374,12 @@
             href="#moadaly"
             class="block px-4 py-2"
             >Calculator</a
+          >
+          <a
+            href="#"
+            onclick="openCurriculum(); return false;"
+            class="block px-4 py-2"
+            >Study plan</a
           >
           <a
             href="#about"
@@ -1180,6 +1192,25 @@
               <i class="fas fa-rotate-left"></i> Reset
             </button>
           </div>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Curriculum Modal -->
+    <dialog id="curriculumModal" class="modal p-0 sm:p-4">
+      <div class="modal-box w-full max-w-6xl h-full sm:h-[90vh] max-h-none sm:max-h-[90vh] flex flex-col p-0">
+        <div class="modal-head">
+          <h3>
+            <i class="fas fa-map-signs modal-icon"></i>
+            What You’ll Study
+          </h3>
+          <button onclick="closeCurriculum()" class="btn btn-ghost btn-circle btn-sm">
+            <i class="fas fa-times text-xl"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="curriculumTabs" class="curriculum-tabs" role="tablist" aria-label="Choose a licence year"></div>
+          <div id="curriculumExplorer"></div>
         </div>
       </div>
     </dialog>
