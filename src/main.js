@@ -13,6 +13,11 @@ import { initContact } from './modules/contact.js';
 import { initDhikr } from './modules/dhikr.js';
 import { initTheme } from './modules/theme.js';
 import { initMoadaly } from './modules/moadaly.js';
+import {
+  closeCurriculum,
+  initCurriculum,
+  openCurriculum,
+} from './modules/curriculum.js';
 import { CONFIG } from './config.js';
 import {
   getFileIconClass,
@@ -623,6 +628,8 @@ function initBackToTop() {
 // ── Expose globals ──────────────────────────────────────────────────────────
 window.openYear = openYear;
 window.openSearchModal = openSearchModal;
+window.openCurriculum = openCurriculum;
+window.closeCurriculum = closeCurriculum;
 window.closeYearModal = () => {
   document.getElementById('yearModal')?.close();
   unlockBody();
@@ -689,6 +696,8 @@ document.addEventListener('click', (e) => {
     window.closeSearchModal();
   if (e.target === document.getElementById('contributorsModal'))
     window.closeContributorsModal();
+  if (e.target === document.getElementById('curriculumModal'))
+    window.closeCurriculum();
 });
 
 // ── Android app announcement (one time per browser) ───────────────────────
@@ -732,6 +741,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initDhikr();
   initTheme();
   initMoadaly();
+  initCurriculum();
   initNavbar();
   initBackToTop();
   loadYears();

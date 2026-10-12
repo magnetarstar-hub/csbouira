@@ -819,6 +819,156 @@ h4 {
   box-shadow: var(--elev-2);
 }
 
+/* ── Curriculum explorer ───────────────────────────────────────────────── */
+.curriculum-surface {
+  overflow: hidden;
+}
+.curriculum-tabs + #curriculumExplorer {
+  padding-top: 0.25rem;
+}
+.curriculum-tabs {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--hairline);
+}
+.curriculum-tab {
+  flex: 1 0 auto;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--hairline);
+  border-radius: 9999px;
+  color: color-mix(in oklab, var(--color-base-content) 68%, transparent);
+  font-weight: 700;
+  white-space: nowrap;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+.curriculum-tab:hover,
+.curriculum-tab.is-active {
+  color: var(--color-primary-content);
+  border-color: transparent;
+  background-image: linear-gradient(
+    120deg,
+    var(--color-secondary),
+    var(--color-primary)
+  );
+  box-shadow: var(--glow-primary);
+}
+.curriculum-topline {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.7fr);
+  gap: 2rem;
+  align-items: start;
+  padding: 2rem 0 2.25rem;
+}
+.eyebrow {
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.curriculum-priority-note {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  color: color-mix(in oklab, var(--color-base-content) 72%, transparent);
+  background-color: color-mix(in oklab, var(--color-primary) 8%, transparent);
+  border: 1px solid color-mix(in oklab, var(--color-primary) 20%, transparent);
+  border-radius: calc(var(--radius-box) - 0.35rem);
+}
+.curriculum-priority-note > i {
+  flex-shrink: 0;
+  padding-top: 0.2rem;
+  color: var(--color-primary);
+}
+.curriculum-priority-note span {
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+.curriculum-priority-note strong {
+  color: var(--color-base-content);
+}
+.curriculum-semesters {
+  display: grid;
+  gap: 2.5rem;
+}
+.curriculum-semester-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.curriculum-semester-head .subhead::after {
+  width: 1.75rem;
+}
+.curriculum-modules {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+.curriculum-module {
+  padding: 1rem;
+  background-color: color-mix(in oklab, var(--color-base-100) 70%, transparent);
+  border: 1px solid var(--hairline);
+  border-radius: calc(var(--radius-box) - 0.45rem);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.curriculum-module:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in oklab, var(--color-primary) 35%, var(--hairline));
+  box-shadow: var(--elev-2);
+}
+.curriculum-module.is-priority {
+  border-inline-start: 3px solid var(--color-primary);
+}
+.curriculum-module-top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.curriculum-module h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.curriculum-module p {
+  margin-top: 0.6rem;
+  color: color-mix(in oklab, var(--color-base-content) 62%, transparent);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+.curriculum-priority {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.7rem;
+  color: var(--color-primary);
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+@media (max-width: 48rem) {
+  .curriculum-topline,
+  .curriculum-modules {
+    grid-template-columns: 1fr;
+  }
+  .curriculum-topline {
+    gap: 1.25rem;
+  }
+}
+
 /* ── Similar Projects ────────────────────────────────────────────────────────
    All six cards live in ONE grid and are pinned to explicit cells, so every
    card shares a row with its counterpart. Equal height is therefore structural
@@ -1576,6 +1726,11 @@ dialog#fileModal.fullscreen .modal-box {
 }
 .progress {
   height: 0.5rem;
+}
+
+#fileDropZone.is-dragging {
+  background-color: color-mix(in oklab, var(--color-primary) 12%, transparent);
+  border-style: dashed;
 }
 
 .thanks-popup {
